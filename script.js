@@ -7,12 +7,15 @@ const Odd = document.querySelector(".Odd");
 Even.addEventListener("click", (e) => {
      e.preventDefault();
 
-     const form = parseInt(document.querySelector(".form-control").value);
+     const from = parseInt(document.querySelector(".from").value);
+     const to = parseInt(document.querySelector(".to").value);
+     
+
      const result = document.querySelector("#result");
      let even = 0;
      let odd = 0;
 
-     for (let i = 0; i < form; i++) {
+     for (let i = from; i <= to; i++) {
           if (i % 2 == 1) {
                odd++;
           } else {
@@ -25,12 +28,16 @@ Even.addEventListener("click", (e) => {
 Odd.addEventListener("click", (e) => {
      e.preventDefault();
 
-     const form = parseInt(document.querySelector(".form-control").value);
+     
+     const from = parseInt(document.querySelector(".from").value);
+     
+     const to = parseInt(document.querySelector(".to").value);
+     
      const result = document.querySelector("#result");
      let even = 0;
      let odd = 0;
 
-     for (let i = 0; i < form; i++) {
+     for (let i = from; i <= to; i++) {
           if (i % 2 == 1) {
                odd++;
           } else {
